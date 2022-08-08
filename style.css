@@ -28,7 +28,7 @@ h1 {
   
   span {
     color:  #fff;
-    text-transform: uppercase ;
+    text-transform: none ;
     background-color: #d5acb4;
     padding: 10px;
   }
@@ -54,14 +54,15 @@ h1 {
   }
 
   address {
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 16px;
     font-weight: 700;
     font-style: normal;
+
   }
 
   a {
     color: #d5acb4;
+    font-weight: bold;
   }
 
   header {
@@ -75,32 +76,22 @@ h1 {
     list-style: none;
   }
 
-  body ul {
-      list-style: none; /* Remove HTML bullets */
-      padding: 0px;
-      margin: 20px 0px 20px 0px;
-    }
-    
-    li { 
-      padding-left: 10px; 
-    }
-    
-    li::before {
-      content: "•"; /* Insert content that looks like bullets */
-      padding-right: 8px;
-      color: #d5acb4;
-    }
 
-    .techskil {
-      display:flex;
-      flex-wrap: wrap;
-      max-width: 1200px;
-      justify-content: space-around;
-      font-weight: 500;
-      padding-top: 20px;
-    }
+.flex-container {
+  display:flex;
+  max-width: 1200px;
+  font-weight: 700;
+  padding-top: 20px;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #708090;
+  padding-bottom: 50px;
+  color: #fff;
+}
 
-    .col-container {
+.col-container {
       display: flex;
       width: 1220px;
       background-color: #f0f8ff;
@@ -116,5 +107,19 @@ h1 {
 }
 
 .soft {
-  background-color: rgb(213, 172, 180, 0.4);
+  background-color: rgba(111, 128, 144, 0.6)
+}
+
+header address img {
+  width: 20px;
+  height: 20px;
+  vertical-align:text-bottom;
+}
+
+.flex-container img {
+  width: 100px;
+  height: 35px;
+  vertical-align: bottom;
+  clip-path: none;
+  padding: 0 10px 0 10px;
 }
